@@ -1,7 +1,7 @@
 package skywars.skywars.loaders;
 
 import org.bukkit.Bukkit;
-import skywars.skywars.LocationCub;
+import skywars.skywars.gameLogic.LocationCub;
 
 import java.util.ArrayList;
 import java.util.List;

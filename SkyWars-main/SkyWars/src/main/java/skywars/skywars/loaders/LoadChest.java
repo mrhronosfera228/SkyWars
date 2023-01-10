@@ -10,9 +10,9 @@ import java.util.List;
 import java.util.Random;
 
 public class LoadChest {
-    public static List<Location> defaultChest = new ArrayList<>();
+    private static List<Location> defaultChest = new ArrayList<>();
     private static Random random = new Random();
-    public static List<Location> midChest = new ArrayList<>();
+    private static List<Location> midChest = new ArrayList<>();
     private static List<ItemStack> DefaultItems = new ArrayList<>();
     private static List<ItemStack> MidItems = new ArrayList<>();
 

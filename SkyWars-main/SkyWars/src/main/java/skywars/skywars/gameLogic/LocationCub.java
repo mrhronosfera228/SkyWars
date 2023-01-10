@@ -1,4 +1,4 @@
-package skywars.skywars;
+package skywars.skywars.gameLogic;
 
 import org.bukkit.Location;
 import org.bukkit.World;

@@ -3,9 +3,9 @@ package skywars.skywars;
 import org.bukkit.plugin.java.JavaPlugin;
 import skywars.skywars.loaders.*;
 
-import static skywars.skywars.SkyWars.copyWorld;
+import static skywars.skywars.gameLogic.World.copyWorld;
 
-public final class MainClass extends JavaPlugin {
+public class MainClass extends JavaPlugin {
     private static MainClass instance;
     private SkyWarsConfig data;
     @Override
@@ -19,13 +19,13 @@ public final class MainClass extends JavaPlugin {
         LoadChest.load();
         LocationLoads.load();
         SkyWarsCubLoad.load();
-        getServer().getPluginManager().registerEvents(new SkyWars(), this);
+        EventsLoader.load();
 
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+
     }
 
     public static MainClass getInstance() {

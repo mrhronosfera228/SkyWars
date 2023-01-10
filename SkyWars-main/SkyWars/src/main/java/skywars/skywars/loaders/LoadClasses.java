@@ -33,7 +33,7 @@ public class LoadClasses {
         ClassItems.add(ItemCreate(Material.CAKE ,"&aFarmer", new ArrayList<>(Arrays.asList("&8&lСодержит: ", "&7&l8 стейков", "&5&l4 хлеба  ", "&6&lКупить класс."))));
         ClassItems.add(ItemCreate(Material.SLIME_BALL, "&aTrapper", new ArrayList<>(Arrays.asList("&8&lСодержит: ", "&7&l16 блоков паутины", "&5&lШар слизи", "&6&lКупить класс."))));
     }
-    public static ItemStack ItemCreate(Material material, String name, List<String> lore) {
+    private static ItemStack ItemCreate(Material material, String name, List<String> lore) {
         ItemStack item = new ItemStack(material);
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
@@ -41,7 +41,7 @@ public class LoadClasses {
         item.setItemMeta(meta);
         return item;
     }
-    public static List<String> toColor(List<String> lore) {
+    private static List<String> toColor(List<String> lore) {
         List<String> newLore = new ArrayList<>();
         for (int i = 0; i < lore.size(); i++) {
             newLore.add(ChatColor.translateAlternateColorCodes('&', lore.get(i)));
